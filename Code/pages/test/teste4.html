@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonto Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../public/img/logo.png">
+    <title>  Todos os Produtos | De Castro </title>
+    <style>
+    form {
+        display: inline;
+
+    }
+
+        .produtos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: auto;
+}
+
+.produtos .produto {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.produtos .produto img {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+}
+
+.produtos .img1:hover {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.produtos .img2 {
+    opacity: 0;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.produtos .img2:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.produtos .nome {
+    margin-top: 102%;
+    margin-bottom: 1%;
+    font-family: 'Verdana';
+    font-size: 14px;
+}
+
+.produtos .preco {
+    margin-top: 0%;
+    font-family: 'Verdana';
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.produtos .precoAntigo {
+    position: absolute;
+    margin-top: 0%;
+    font-family: 'Verdana';
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: line-through; 
+}
+
+.produtos .desconto {
+    height: 45px;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.teste2 {
+    height: 40px;
+    font-family: 'Verdana';
+    font-size: 18px;
+    font-weight: bold;
+    color: #e71836;
+}
+
+.teste3 {
+    padding: 0px 5px;
+    height: 22.5px;
+    font-family: 'Verdana';
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #e71836;
+}
+
+.novidade {
+    height: 45px;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.teste4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 0px 5px;
+    height: 25px;
+    font-family: 'Verdana';
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #70b835;
+}
+    </style>
+</head>
+<body>
+    <section class="produtos">
+        <div class="produto">
+            <form action="" class="poise">
+                <img class="img1" src="../../public/img/adidascamisola4.jpg" alt="">
+                <img class="img2" src="../../public/img/adidascamisola3.jpg" alt="">
+                <p class="nome"> drena </p>
+                <p class="preco"> 10€ </p>
+            </form>
+        </div>
+        
+        <div class="produto">
+            <form action="" class="poise">
+                <img class="img1" src="../../public/img/adidascamisola4.jpg" alt="">
+                <img class="img2" src="../../public/img/adidascamisola3.jpg" alt="">
+                <p class="nome"> drena </p>
+                <p class="preco"> 10€ </p>
+            </form>
+        </div>
+
+        <div class="produto">
+            <form action="" class="poise">
+                <img class="img1" src="../../public/img/adidascamisola4.jpg" alt="">
+                <img class="img2" src="../../public/img/adidascamisola3.jpg" alt="">
+                <p class="nome"> drena </p>
+                <p class="preco"> 10€ </p>
+            </form>
+        </div>
+        
+    </section>
+</body>
+</html>

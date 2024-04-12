@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Fonto Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="img/logo.png">
+    <title> O Papi é flawess | De Castro </title>
+    <style>
+        h2 {
+            text-align: center;
+            font-family: 'Century Gothic';
+            color: brown;
+        }
+
+        .gat {
+            display: flex;
+            gap: 10px;
+        }
+
+        #div1 {
+            display: none;
+            font-size: 400px;
+            margin-top: 21px;
+            margin-left: 17%;
+        }
+
+        #main {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height:100%;
+            width: 100%;
+        }
+        
+        #app img {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        #battery-tatic {
+            font-size: 400px;
+            display: block;
+            margin-left: 17%;
+        }
+    </style>
+</head>
+<body>
+    <h2> PLUG IN, PLUG OUT </h2>
+
+    <div class="gat">
+        <img id="myImage" src="img/plug_out.png" alt="">
+    
+        <div id="div1" class="fa"> </div>
+    
+        <div id="battery-tatic"> <i class="fa fa-battery-quarter"> </i> </div>
+    
+        <script>
+            // Mudar Background Image
+            let carregar = document.querySelector("#myImage");
+
+            function chargebattery() {
+                document.getElementById("myImage").style.src ="img/plug_in.png"
+                document.getElementById("div1").style.display = "block";
+                document.getElementById("battery-tatic").style.display = "none";
+                var a;
+                a = document.getElementById("div1");
+                a.innerHTML = "&#xf244;";
+                setTimeout(function () {
+                    a.innerHTML = "&#xf243;";
+                    }, 1000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf242;";
+                    }, 2000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf241;";
+                    }, 3000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf240;";
+                    }, 4000);
+                }
+                chargebattery();
+                setInterval(chargebattery, 5000);
+        </script>
+    
+        <script>
+            function plugOut() {
+                document.getElementById('myImage').src='img/plug_out.png'
+                document.getElementById("div1").style.display = "none";
+                document.getElementById("battery-tatic").style.display = "block";
+            }
+        </script>
+    </div>
+</body>
+</html>

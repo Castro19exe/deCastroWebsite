@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    background-image: url("../img/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.register-form {
+    width: 650px;
+    height: 600px;
+    margin: 0;
+    padding: 40px 0px;
+    background-color: white;
+    box-shadow: 0px 0px 14px -3px #000000;
+}
+
+.tit {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 68px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.dados {
+    display: block;
+    margin: auto;
+    outline: none;
+    width: 70%;
+    height: 55px;
+    margin-top: 20px;
+    padding: 8px 12px;
+    font-size: 120%;
+    font-family: 'Poppins';
+    font-weight: none;
+    color: black;
+    background-color: #E5E5E5;
+    border: none;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+    transition: border 0.2s;
+}
+
+.submit {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 8px 18px;
+    font-family: 'Poppins';
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: linear-gradient(0.55turn, #445674, #445674, rgb(85, 112, 100));
+    border: none;
+}
+
+.submit::before {
+    opacity: 0;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    content: "CONECTAR";
+    padding: 8px 18px;
+    border-radius: 0px;
+    background: linear-gradient(0.57turn,rgb(85, 112, 100) ,#445674, #445674);
+    transition: opacity 0.3s;
+}
+
+.submit:hover::before {
+    opacity: 1;
+    outline: 0;
+}
+
+.submit:focus {
+    outline: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.erro {
+    position: fixed;
+    left: 25px;
+    bottom: 15px;
+    min-width: 200px;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #fff;
+    background-color: rgb(206, 63, 63);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+  
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0px; opacity: 0;
+    } 
+    to {
+        bottom: 15px; opacity: 1;
+    }
+}
+  
+@keyframes fadein {
+    from {
+        bottom: 0; opacity: 0;
+    }
+    to {
+        bottom: 15px; opacity: 1;
+    }
+}
+

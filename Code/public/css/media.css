@@ -1,0 +1,394 @@
+@media screen and (max-width: 1635px) {
+    header .search-container{
+        display: none;
+    }
+
+    h2 .h2-home{
+        font-size: 7vw;
+    }
+
+    .search-container-responsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .menu {
+        display: inherit;
+        padding: 20px 0px 5px 0px;
+    }
+
+    header .logo {
+        display: block;
+        width: 219px;
+        margin: 0px 0px 0px 20px;
+        padding: 0px;
+    }
+
+    header .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+    }
+
+    header ul {
+        margin-top: 15px;
+    }
+
+    .shop-icon {
+        display: none;
+    }
+    
+    .notification-icon {
+        display: none;
+    }
+
+    header .categoria, .special, .login, .search-container-responsive, .notification-icon-responsive, .shop-icon-responsive {
+        display: none;
+    }
+
+    .menu.responsive .search-container-responsive {
+        display: flex;
+        margin: auto 0px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .menu.responsive {
+        position: relative;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .menu.responsive .logo {
+        padding: 0px;
+    }
+
+    .menu.responsive .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+    }
+
+    .menu.responsive a {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        font-size: 20px;
+    }
+
+    .menu.responsive a:hover {
+        border: none;
+    }
+
+    .teste:hover .dropdown-content {
+        display: none;
+    }
+
+    .h2-home {
+        font-size: 499%;
+    }
+
+    .h2-home, .h2-special, .h2-news, .h2-sales {
+        text-align: center;
+        font-family: 'Verdana';
+        font-size: 4vw;
+        color: black;
+    }
+
+    .produtos {
+        margin: 0px 30px 60px 30px;
+    }
+
+    .produtos .produto {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 30px 15px;
+    }
+    
+    .produtos .produto img {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .produtos .img1:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+    
+    .produtos .img2 {
+        display: none;
+    }
+    
+    .produtos .img2:hover {
+        display: none;
+    }
+
+    .search-container-responsive {
+        margin-bottom: 0px;
+    }
+
+    .search-container-responsive input {
+        outline: none;
+        float: left;
+        flex: 80%;
+        height: 19px;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .search-container-responsive button {
+        cursor: pointer;
+        float: left;
+        flex: 20%;
+        height: 39px;
+        font-size: 20px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    .search-container-responsive button:hover {
+        height: 39px;
+        font-size: 20px;
+    }
+
+    .prev {
+        top: 40%;
+        left: 0px;
+        background-color: rgb(226, 55, 55, 0.8);
+        border-radius: 0%;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        top: 40%;
+        right: 0px;
+        background-color: rgb(226, 55, 55, 0.8);
+        border-radius: 0%;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgb(226, 55, 55, 0.8);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 85%;
+    }
+
+    .produtos {
+        margin: 0px 30px 30px 30px;
+    }
+
+    .produtos .produto {
+        position: relative;
+        width: 45%;
+        height: auto;
+        margin: 30px 15px;
+    }
+    
+    .produtos .produto img {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .produtos .img1:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+    
+    .produtos .img2 {
+        display: none;
+    }
+    
+    .produtos .img2:hover {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .menu.responsive .icon {
+        left: 85%;
+    }
+
+    .produtos {
+        margin: 0px 30px 65px 30px;
+    }
+
+    .produtos .produto {
+        position: relative;
+        width: 85%;
+        height: auto;
+        margin: 30px 15px;
+    }
+    
+    .produtos .produto img {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .produtos .img1:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+    
+    .produtos .img2 {
+        display: none;
+    }
+    
+    .produtos .img2:hover {
+        display: none;
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    .slideshow-container {
+        max-width: 95%;
+        height: auto;
+        position: relative;
+        margin: 10px auto;
+        margin-bottom: 13px;
+    }
+
+    .slideshow-image {
+        display: none;
+    }
+    
+    .responsive-slideshow-image {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 47.5%;
+        width: auto;
+        padding: 15px 22px;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        background-color: rgb(226, 55, 55, 0.8);
+        border-radius: 0px;
+        user-select: none;
+        transition: 0.6s ease;
+    }
+
+    .prev {
+        left: 0px;
+    }
+
+    .next {
+        right: 0px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(226, 55, 55, 0.8);
+        border-radius: 0px;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 3px;
+        background-color: #bbb;
+        border-radius: 0%;
+        display: inline-block;
+        transition: width 0.3s, background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+        width: 20px;
+        background-color: rgb(226, 55, 55);
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    .login-form {
+        width: 99vw;
+        height: 100vh;
+    }
+
+    .register-form {
+        width: 95vw;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+    
+    .tit {
+        font-size: 45px;
+    }
+    
+    .dados {
+        width: 85%;
+    }
+    
+    .create {
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .submit {
+        width: 85%;
+    }
+
+    #warning {
+        z-index: 99;
+        justify-content: center;
+        left: 1vw;
+        bottom: 20px;
+    }
+
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0; opacity: 0;
+        } 
+        to {
+            bottom: 20px; opacity: 1;
+        }
+    }
+      
+    @keyframes fadein {
+        from {
+            bottom: 0; opacity: 0;
+        }
+        to {
+            bottom: 20px; opacity: 1;
+        }
+    }
+      
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 20px; opacity: 1;
+        } 
+        to {
+            bottom: 0; opacity: 0;
+        }
+    }
+      
+    @keyframes fadeout {
+        from {
+            bottom: 20px; opacity: 1;
+        }
+        to {
+            bottom: 0; opacity: 0;
+        }
+    }
+}
